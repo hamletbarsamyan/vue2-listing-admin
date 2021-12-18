@@ -57,7 +57,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true,
       favicon: resolve('favicon.ico'),
-      title: 'listings-admin-ui',
+      title: 'vue2-listing-admin',
       path: config.dev.assetsPublicPath + config.dev.assetsSubDirectory
     })
   ]
