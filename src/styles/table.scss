@@ -1,0 +1,34 @@
+table {
+  background-color: #fff;
+  max-width: 100%;
+
+  & th {
+    text-align: left;
+  }
+}
+
+.table {
+  margin-bottom: 1rem;
+  width: 100%;
+
+  & th,
+  & td {
+    padding: 0.5rem 1rem;
+    vertical-align: middle;
+  }
+}
+
+.table--bordered {
+  border: $--border-base;
+
+  & th,
+  & td {
+    border: $--border-base;
+  }
+}
+
+.table--striped {
+  & > tbody > tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}

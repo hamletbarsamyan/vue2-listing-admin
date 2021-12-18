@@ -1,0 +1,40 @@
+code {
+  color: $--color-danger;
+  font-size: 87.5%;
+  word-break: break-word;
+
+  @nest a > & {
+    color: inherit;
+  }
+}
+
+kbd {
+  background-color: $--color-text-primary;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 87.5%;
+  padding: 0.2rem 0.4rem;
+
+  & kbd {
+    font-size: 100%;
+    font-weight: 700;
+    padding: 0;
+  }
+}
+
+pre {
+  color: $--color-text-primary;
+  display: block;
+  font-size: 87.5%;
+
+  & code {
+    color: inherit;
+    font-size: inherit;
+    word-break: normal;
+  }
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
