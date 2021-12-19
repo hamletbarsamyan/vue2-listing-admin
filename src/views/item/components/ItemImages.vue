@@ -15,6 +15,30 @@
         </template>
       </el-table-column>
     </el-form-item>
+    <el-form-item :label="$t('common.icon')" prop="iconPath">
+      <span class="item-picture" style="margin-left: 10px;">
+        <br>
+        <br>
+        <el-button :loading="loading" type="primary" icon="upload" size="small" style="float: right; margin-left: 10px" @click="imagecropperShow=true">{{ $t('common.upload_image') }}</el-button>
+
+        <image-cropper
+          v-show="imagecropperShow"
+          :width="300"
+          :height="300"
+          :key="imagecropperKey"
+          :url="imageUploadPath"
+          field="icon"
+          lang-type="en"
+          @close="close"
+          @crop-upload-success="cropSuccess"/>
+      </span>
+      <span v-if="imagesForm.iconPath" class="item-picture" style="margin-left: 10px;">
+        <img :src="imagesForm.iconPath" class="img-responsive">
+        <br>
+        <br>
+        <el-button :loading="loading" type="primary" icon="upload" size="small" style="float: right; margin-left: 10px" @click.native.prevent="deleteImage">{{ $t('common.delete_image') }}</el-button>
+      </span>
+    </el-form-item>
     <br>
     <el-form-item>
       <el-button type="primary" size="small" style="float: right; margin-left: 10px" @click.native.prevent="backToList">{{ $t('common.back') }}</el-button>
