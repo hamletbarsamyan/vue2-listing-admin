@@ -16,3 +16,20 @@ npm run build:dev
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+
+![picture](doc/dashboard.png)
+
+![picture](doc/attributes.png)
+
+![picture](doc/attribute-details.png)
+
+![picture](doc/attribute-values.png)
+
+![picture](doc/category-attributes.png)
+
+![picture](doc/items.png)
+
+![picture](doc/item-details.png)
+
+![picture](doc/item-attributes.png)
+
