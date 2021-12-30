@@ -17,6 +17,10 @@ npm run build:dev
 npm run build --report
 ```
 
+Users:
+admin:admin
+user:user
+
 ![picture](doc/dashboard.png)
 
 ![picture](doc/attributes.png)
